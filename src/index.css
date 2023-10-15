@@ -1,0 +1,161 @@
+/* @import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro?styles=82961,82962,82971,82972,82969,82970,82967,82968,82965,82966,82963,82964,82959,82960,82957,82958'); */
+
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("./fonts/NHaasGroteskTXPro-55Rg.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("./fonts/NHaasGroteskTXPro-65Md.ttf") format("truetype");
+  font-weight: 500;
+  font-style: medium;
+}
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("./fonts/NHaasGroteskTXPro-75Bd.ttf") format("truetype");
+  font-weight: 700;
+  font-style: bold;
+}
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.bg-gradient-effect {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 153, 59, 0.25) 0%,
+    rgba(16, 16, 16, 0) 100%
+  );
+}
+
+.bg-linear-gradient-effect-waitlist {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 153, 60, 0.25) 0%,
+    rgba(255, 153, 60, 0.05) 50%,
+    rgba(255, 153, 60, 0) 80%
+  );
+}
+
+.banner-sell-vehicle-bg {
+  background-image: url("./assets/images/custom-bg.jpg");
+}
+.footer-bg {
+  background-image: url("./assets/images/footer-map.jpg");
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.hover-scale {
+  transition: transform 0.6s ease-in-out; /* Add smooth transition */
+}
+
+.hover-scale:hover {
+  transform: scale(1.02); /* Scale the element on hover */
+}
+
+.gradient-border {
+  position: relative;
+}
+
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  top: 0; /* Adjust to control the width of the border */
+  height: 100%;
+  width: 2px; /* Adjust to control the width of the border */
+  background-image: linear-gradient(
+    to bottom,
+    #ff993c 0%,
+    rgba(255, 153, 60, 0.05) 50%,
+    rgba(255, 153, 60, 0) 80%
+  ); /* Adjust colors as needed */
+}
+.choose-steps-block {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  padding: 25px;
+}
+.choose-path-1::before {
+  content: " ";
+  background-image: url(./assets/assets/images/step-path-1.svg);
+  position: absolute;
+  bottom: -170px;
+  left: 70px;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: 88%;
+}
+.choose-steps-block {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  padding: 25px;
+}
+.choose-path-2 {
+  margin-top: 1rem;
+}
+.choose-path-2::before {
+  content: " ";
+  background-image: url(./assets/assets/images/step-path-2.svg);
+  position: absolute;
+  bottom: -200px;
+  left: -60px;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: 88%;
+}
+.choose-path-3 {
+  margin-top: 0;
+}
+.choose-path-3::before {
+  content: " ";
+  background-image: url(./assets/assets/images/step-path-3.svg);
+  position: absolute;
+  bottom: -170px;
+  left: 70px;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: 82%;
+}
+.choose-path-4 {
+  margin-top: 1rem;
+}
+.accordion {
+  border-color: rgba(0,0,0,0);
+  -webkit-box-shadow: -1px 1px 15px -1px rgba(0,0,0,0.15);
+  box-shadow: -1px 1px 15px -1px rgba(0,0,0,0.15);
+}
+.hover-scale {
+  transition: transform 0.4s ease-in-out; /* Add smooth transition */
+}
+
+.hover-scale:hover {
+  transform: scale(1.04); /* Scale the element on hover */
+}
+@keyframes moveY {
+  0% {
+    transform: translateY(0);
+  }
+  33% {
+    transform: translateY(40%);
+  }
+  66% {
+    transform: translateY(80%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
